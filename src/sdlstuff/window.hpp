@@ -2,7 +2,7 @@
 
 #include <SDL.h>
 
-namespace r3emu::sdlstuff
+namespace sdlstuff
 {
 	class window
 	{

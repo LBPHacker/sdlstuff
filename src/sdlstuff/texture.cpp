@@ -2,7 +2,7 @@
 
 #include "nice_error.hpp"
 
-namespace r3emu::sdlstuff
+namespace sdlstuff
 {
 	texture::texture(SDL_Renderer *renderer, int width, int height, bool target)
 	{

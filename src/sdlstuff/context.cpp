@@ -4,7 +4,7 @@
 
 #include <string>
 
-namespace r3emu::sdlstuff
+namespace sdlstuff
 {
 	context::context()
 	{

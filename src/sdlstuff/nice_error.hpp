@@ -2,7 +2,7 @@
 
 #include <stdexcept>
 
-namespace r3emu::sdlstuff
+namespace sdlstuff
 {
 	class nice_error : public std::runtime_error
 	{

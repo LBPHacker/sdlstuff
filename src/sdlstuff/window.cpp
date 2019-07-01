@@ -3,7 +3,7 @@
 #include "context.hpp"
 #include "nice_error.hpp"
 
-namespace r3emu::sdlstuff
+namespace sdlstuff
 {
 	window::window()
 	{
