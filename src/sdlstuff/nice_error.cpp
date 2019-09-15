@@ -5,7 +5,7 @@
 namespace sdlstuff
 {
 	nice_error::nice_error(std::string origin) :
-		std::runtime_error(origin + ": " + SDL_GetError())
+		runtime_error(origin + ": " + SDL_GetError())
 	{
 	}
 }

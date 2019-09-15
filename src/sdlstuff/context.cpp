@@ -8,18 +8,19 @@ namespace sdlstuff
 {
 	context::context()
 	{
-		if (SDL_Init(SDL_INIT_VIDEO | SDL_INIT_TIMER) < 0)
+		if (SDL_WasInit(0))
+		{
+			throw sdlstuff::runtime_error("SDL_Init has already been called");
+		}
+
+		if (SDL_Init(SDL_INIT_EVERYTHING) < 0)
 		{
 			throw sdlstuff::nice_error("SDL_Init");
 		}
-
-		sdl_event_type = SDL_RegisterEvents(1);
 	}
 
 	context::~context()
 	{
 		SDL_Quit();
 	}
-
-	Uint32 context::sdl_event_type;
 }
